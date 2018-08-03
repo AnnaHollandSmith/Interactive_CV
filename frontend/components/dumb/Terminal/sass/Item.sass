@@ -1,0 +1,125 @@
+.flex-row
+	display: flex
+	margin: 0px 0 0px 35px
+	padding: 10px 0
+
+.row-block
+	padding: 20px 0 20px
+	border-bottom: 1px solid transparentize($text-color, 0.7)
+
+	&:last-child
+		border-bottom: none
+
+.title
+	color: rgb(206, 169, 64)
+
+.sub-title
+	color: transparentize($text-color, 0.3)
+
+.cell
+	text-align: justify
+	align-self: center
+
+	&.sm
+		min-width: 20%
+
+	&.md
+		min-width: 30%
+
+	&.fill
+		flex-grow: 1
+
+	img
+		width: auto
+		max-height: 150px
+		border-radius: 6px
+		cursor: zoom-in
+		padding: 0 5px
+
+.cell-logo
+	display: flex
+	align-items: center
+
+	span
+		margin-left: 10px
+
+.result-area
+	color: $text-color
+	font-weight: lighter
+	word-break: normal
+  text-align: justify
+
+	p
+		word-break: normal
+	  text-align: justify
+
+	pre
+		font-family: Menlo-Regular
+
+	h4
+		font-weight: lighter
+		text-transform: uppercase
+
+	a
+		color: $link
+		word-break: break-all
+		text-decoration: none
+
+.ascii-art
+	font-family: Menlo-Regular
+	font-size: 0.6em
+
+.item-img
+	max-width: 200px
+	border-radius: 6px
+	margin-left: 35px
+
+.cell-list
+	margin: 0
+	padding-left: 14px
+
+	li
+		padding: 2px 0
+
+.tag
+	color: #fff
+	opacity: .8
+	padding: 5px 15px
+	margin: 5px 15px 0px 0
+	font-size: .9em
+	border-radius: 20px
+
+	&.topic
+		background-color: rgba(156, 39, 176, 0.65)
+
+	&.lang
+		background-color: rgba(0, 184, 212, 0.65)
+
+.large-img
+	margin: 10px 0
+	max-width: 100%
+	max-height: 500px
+	border-radius: 3px
+	box-shadow: 0px 11px 14px -7px rgba(0, 0, 0, 0.2), 0px 23px 36px 3px rgba(0, 0, 0, 0.14), 0px 9px 44px 8px rgba(0, 0, 0, 0.12)
+
+
+.tab-grid
+	display: flex
+	flex-wrap: wrap
+
+	div
+		flex-basis: 0
+		padding-right: 16px
+
+
+@media(max-width: 716px)
+	.flex-row
+		flex-wrap: wrap
+	.cell
+		width: 100%
+		padding: 2px 0
+
+
+@media(max-width: 494px)
+	.flex-row
+		margin-left: 10px
