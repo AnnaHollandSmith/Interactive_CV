@@ -72,7 +72,7 @@ export default class Terminal extends React.Component{
 
 					<div className='location-info'>
 						<img className='terminal-icon' src={homeIcon}/>
-						<span>david — resume — -bash — Solarized Dark ansi</span>
+						<span>anna — cv — -bash — Solarized Dark</span>
 					</div>
 				</div>
 

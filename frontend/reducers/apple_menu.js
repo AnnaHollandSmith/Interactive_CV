@@ -17,7 +17,7 @@ const INITIAL_BAR = fromJS([
 			{ title: 'Restart'},
 			{ title: 'Shut Down'},
 			{ line: true },
-			{ title: 'Log Out David Villarreal...', span: '⇧⌘Q'}
+			{ title: 'Log Out Anna Holland-Smith...', span: '⇧⌘Q'}
 		]
 	},
 	{
@@ -151,7 +151,7 @@ const INITIAL_BAR = fromJS([
 			{line: true},
 			{title: 'Bring All to Front', span: ''},
 			{line: true},
-			{title: 'david — resume — -bash — Solarized Dark ansi', span: '⌘2'}
+			{title: 'anna — cv — -bash — Solarized Dark', span: '⌘2'}
 		]
 	},
 	{

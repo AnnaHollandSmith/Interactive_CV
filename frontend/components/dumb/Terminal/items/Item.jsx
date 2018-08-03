@@ -8,8 +8,7 @@ const TerminalItem = ({children, withInput, command, path, onClick}) => (
 	<div className={`input-item ${withInput ? 'with-input' : ''}`}
 		onClick={onClick}>
 		<p>
-			<span className='orange'> david </span> at
-			<span className='yellow'> Joker </span> in
+			<span className='orange'> anna </span> at
 			<span className='green'> {path} </span> on
 			<span className='purple'> master </span>
 		</p>
