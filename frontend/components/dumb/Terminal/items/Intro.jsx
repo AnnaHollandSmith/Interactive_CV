@@ -26,7 +26,7 @@ export const Intro = ({data, path}) => {
 					{art}
 				</pre>
 
-				<p>
+				<p className='welcome'>
 					{welcomeMessage}
 				</p>
 
@@ -49,7 +49,7 @@ export const Intro = ({data, path}) => {
 				</div>
 
 				<h4 className='title'>
-					PS:
+					This is all too much, take me to your CV:
 				</h4>
 
 				<p>{ps}</p>
