@@ -1,20 +1,33 @@
 const work = {
 	jobs: [
 		{
-			employer: 'Comercializadora Vida Flor SA de CV',
-			role: 'Senior Software Engineer',
-			location: {city: 'Zapopan', state: 'Jalisco', country: 'Mexico'},
-			dates: {from: 'August 2014', to: 'August 2017'},
-			url: 'https://bellezaorganica.com.mx/',
+			employer: 'The Hut Group',
+			role: 'Programme Manager | THG Technology and Innovation Accelerator',
+			location: {city: 'Manchester', country: 'UK'},
+			dates: {from: 'May 2018', to: 'Present'},
+			url: 'https://www.thg.com/',
 			description: `
-			Vida Flor is a health and beauty company that first hired me to help them build an e-commerce website. After finishing the website, they ask me if I could stay full time. I managed their database and created and managed their Point of Sales system to help them organize all their sales and inventory.
+			The Hut Group is....
 			`,
 			achievements: [
-				'Optimized their website with ReactJS and ExpressJS which changed their previous loading speed from 2s to 0.5s and increased online sales by 25%',
-				'Automated the creation of reports with Microsoft Access which lead to a workforce that was more focus on improving the company instead of having to create reports manually',
-				'Created a POS system which helps track inventory and reduce inventory errors by 30%.'
+				'Developed a Technical Curriculum covering (but not limited to) Python, Java, Operating Systems, Databases and Web Development',
+				`Developed a 'Professional Skills' Curriculum covering topics such as 'Developing a Growth Mindset', 'Mindfulness' and 'Working Effectively in Teams'`,
+				`Developed an 'Industry Primer' Curriculum providing an overview of how technology serves all areas of The Hut Group's order pipeline`,
+				`Developed The Hut Group's first ever 'Women in Tech' network`
 			]
-		}
+		},{
+			employer: 'BBC',
+			role: 'Software Engineer| Content Distribution Services',
+			location: {city: 'Manchester', country: 'UK'},
+			dates: {from: 'August 2016', to: 'May 2018'},
+			url: 'https://www.thg.com/',
+			description: `
+			Put description here....
+			`,
+			achievements: [
+				'Put achievements here',
+			]
+		},
 	]
 }
 
