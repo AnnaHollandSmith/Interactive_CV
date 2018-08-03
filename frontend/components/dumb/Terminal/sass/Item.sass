@@ -11,10 +11,14 @@
 		border-bottom: none
 
 .title
-	color: rgb(206, 169, 64)
+	color: #00bcd4 
 
 .sub-title
 	color: transparentize($text-color, 0.3)
+
+.coloured-text 
+	color: #b388ff 
+
 
 .cell
 	text-align: justify
@@ -28,6 +32,17 @@
 
 	&.fill
 		flex-grow: 1
+	
+	&.name
+		color: #ffcdd2
+
+	&.role
+		color: #ffe0b2 
+
+
+	&.about 
+		color: #c5cae9
+
 
 	img
 		width: auto
@@ -53,12 +68,17 @@
 		word-break: normal
 	  text-align: justify
 
+
 	pre
 		font-family: Menlo-Regular
 
 	h4
 		font-weight: lighter
 		text-transform: uppercase
+
+	h5 
+		font-weight: lighter
+		font-style: italic
 
 	a
 		color: $link
@@ -68,6 +88,11 @@
 .ascii-art
 	font-family: Menlo-Regular
 	font-size: 0.6em
+	color: #ffcdd2
+
+.welcome
+	color: #ffcdd2
+	font-size: 1.0em
 
 .item-img
 	max-width: 200px
