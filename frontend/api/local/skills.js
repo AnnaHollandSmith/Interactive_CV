@@ -1,28 +1,31 @@
 const skills = {
 	technologies: [
-		{ name: 'Java', mastery: 80 },
-		{ name: 'Javascript', mastery: 95 },
-		{ name: 'HTML', mastery: 90 },
-		{ name: 'CSS', mastery: 90 },
-		{ name: 'Bash Scripting', mastery: 50 },
-		{ name: 'Ruby On Rails', mastery: 75 },
-		{ name: 'Python', mastery: 75 },
-		{ name: 'ReactJS', mastery: 95 },
-		{ name: 'PHP', mastery: 68 },
-		{ name: 'Laravel', mastery: 65 },
-		{ name: 'Web Development', mastery: 90 },
-		{ name: 'Mobile Development', mastery: 67 },
-		{ name: 'Objective C', mastery: 70 },
-		{ name: 'C++', mastery: 74 },
-		{ name: 'C', mastery: 60 },
-		{ name: 'SQL', mastery: 78 },
-		{ name: 'NoSQL', mastery: 78 },
-		{ name: 'Security Fundamentals', mastery: 65 },
-		{ name: 'Data Structures', mastery: 80 },
-		{ name: 'Algorithms', mastery: 80 },
-		{ name: 'Machine Learning', mastery: 60 },
-		{ name: 'ExpressJS', mastery: 85}
+		{ name: 'Javascript', mastery: 70 },
+		{ name: 'HTML', mastery: 60 },
+		{ name: 'CSS', mastery: 60 },
+		{ name: 'Bash Scripting', mastery: 70 },
+		{ name: 'Ruby On Rails', mastery: 60 },
+		{ name: 'Python', mastery: 40 },
+		{ name: 'ReactJS', mastery: 20 },
+		{ name: 'Scala', mastery: 65 },
+		{ name: 'TypeScript', mastery: 65 },
+		{ name: 'Web Development', mastery: 50 },
+		{ name: 'SQL', mastery: 50 },
+		{ name: 'NoSQL', mastery: 50 },
 	],
+	processes: [
+		{ name: 'TDD', mastery: 90 },
+		{ name: 'Agile Development', mastery: 80},
+		{ name: 'XP', mastery: 85 }, 
+		{ name: 'Pair Programming', mastery: 80}, 
+		{ name: 'Project Management', mastery: 70}
+	],
+	softskills: [
+		{ name: 'Public Speaking', mastery: 90 },
+		{ name: 'Writing', mastery: 80},
+		{ name: 'Consulting on D&I', mastery: 85 }, 
+		{ name: 'Teaching and Mentoring', mastery: 80}
+	]
 }
 
 

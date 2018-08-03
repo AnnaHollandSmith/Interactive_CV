@@ -34,21 +34,38 @@ export class Skills extends React.PureComponent{
 		} = this.props.data
 
 		value.technologies.sort( (a,b) => {return b.mastery - a.mastery})
+		value.processes.sort( (a,b) => {return b.mastery - a.mastery})
+		value.softskills.sort( (a,b) => {return b.mastery - a.mastery})
 
 		const techList = value.technologies.map( (skill, index) =>
 			<SkillBar key={index} skill={skill} size={this.state.size}/>
 		)
 
+		const processList = value.processes.map( (skill, index) =>
+			<SkillBar key={index} skill={skill} size={this.state.size}/>
+		)
+
+		const softskillsList = value.softskills.map( (skill, index) =>
+		<SkillBar key={index} skill={skill} size={this.state.size}/>
+		)
+
 		return (
 			<TerminalItem command={command} path={this.props.path}>
+
 				<section className='result-area'>
+					<h5 className='coloured-text'>NB: I value and prioritise continuous professional and personal development. As such, I don't believe we ever really 'accomplish' a skill. </h5>
 					<h4 className='title'>TECHNICAL SKILLS:</h4>
 					{techList}
+					<h4 className='title'>PROCESSES:</h4>
+					{processList}
+					<h4 className='title'>PROFESSIONAL SKILLS:</h4>
+					{softskillsList}
 				</section>
 			</TerminalItem>
 		)
 	}
 }
+
 
 
 /**
