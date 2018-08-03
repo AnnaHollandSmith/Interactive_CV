@@ -1,20 +1,41 @@
-/* global require */
-
 const education = {
-	schools: [
+	inperson: [
 		{
-			name: 'Santa Monica College',
-			location: {city: 'Santa Monica', state: 'CA', country: 'USA'},
-			degree: 'Dropout',
-			majors: 'Computer Science',
-			dates: {from: 'Nov 29, 2011', to: 'July 02, 2014'},
-			url: 'https://www.smc.edu'
+			name: 'Makers Academy',
+			location: {city: 'London',country: 'UK'},
+			degree: 'Coding Bootcamp',
+			dates: {from: 'May 2016', to: 'August 2016'},
+			url: 'https://makers.tech/'
 		},{
-			name: 'Tecnologico de Monterrey Campus Guadalajara',
-			location: {city: 'Zapopan', state: 'Jalisco', country: 'Mexico'},
-			degree: 'High School Diploma',
-			dates: {from: 'August 29, 2005', to: 'May 02, 2009'},
-			url: 'http://www.itesm.mx/wps/wcm/connect/Campus/GDA/Guadalajara/'
+			name: 'CodeFirst: Girls',
+			location: {city: 'London', country: 'UK'},
+			degree: 'Introduction to Web Development',
+			dates: {from: 'October 2015', to: 'December 2015'},
+			url: 'https://www.codefirstgirls.org.uk/'
+		},{
+			name: 'The University of Law',
+			location: {city: 'London', country: 'UK'},
+			degree: 'Legal Practice Certificate',
+			dates: {from: 'September 2013', to: 'December 2014'},
+			url: 'https://www.law.ac.uk/'
+		},{
+			name: 'Birkbeck College, University of London',
+			location: {city: 'London', country: 'UK'},
+			degree: 'LLM (Qualifying Law Degree)',
+			dates: {from: 'September 2012', to: 'September 2013'},
+			url: 'http://www.bbk.ac.uk/study/2018/postgraduate/programmes/TMLLAWSS_C/'
+		},{
+			name: 'University College London',
+			location: {city: 'London', country: 'UK'},
+			degree: 'Gender, Society and Representation, MA',
+			dates: {from: 'September 2011', to: 'September 2012'},
+			url: 'http://www.ucl.ac.uk/gender-studies/prospective-students/gender-society-and-representation-ma'
+		},{
+			name: 'The University of York',
+			location: {city: 'York', country: 'UK'},
+			degree: 'History and History of Art BA(Hons)',
+			dates: {from: 'September 2008', to: 'September 2011'},
+			url: 'https://www.york.ac.uk/'
 		}
 	],
 
@@ -22,40 +43,14 @@ const education = {
 		{
 			name: 'Full Stack Web Developer Nanodegree',
 			school: 'Udacity',
-			dates: {from: 'Feb 15, 2017', to: 'June 2, 2017'},
+			dates: {from: 'March 2018', to: 'Present'},
 			url: 'https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004',
-			images: [require('resources/images/fullstack.jpg')]
-		},
-		{
-			name: 'Front-End Web Developer Nanodegree',
-			school: 'Udacity',
-			dates: {from: 'Feb 15, 2017', to: 'June 2, 2017'},
-			url: 'https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001',
-			images: [require('resources/images/frontend.jpg')]
 		},
 		{
 			name: 'Introduction to Machine Learning',
 			school: 'Udacity',
-			dates: {from: 'Jan 15, 2017', to: 'Feb 01, 2017'},
+			dates: {from: 'January 2017', to: 'February 2017'},
 			url: 'https://www.udacity.com/course/intro-to-machine-learning--ud120'
-		},
-		{
-			name: 'Artificial Intelligence',
-			school: 'MIT OpenCourseWare',
-			dates: {from: 'November 01, 2016', to: 'Jan 15, 2017'},
-			url: 'https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/'
-		},
-		{
-			name: 'Introduction to Algorithms',
-			school: 'MIT OpenCourseWare',
-			dates: {from: 'July 28, 2013', to: 'August 25, 2013'},
-			url: 'https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/',
-		},
-		{
-			name: 'Mathematics for Computer Science',
-			school: 'MIT OpenCourseWare',
-			dates: {from: 'August 01, 2012', to: 'September 25, 2012'},
-			url: 'https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/'
 		}
 	],
 }
@@ -66,14 +61,14 @@ export default function (commands) {
 	if(commands.length == 2){
 		switch (commands[1]) {
 		case '--online':
-			return {online: education.online, schools: []}
+			return {online: education.online, inperson: []}
 
-		case '--schools':
-			return {schools: education.schools, online: []}
+		case '--inperson':
+			return {inperson: education.inperson, online: []}
 
 		default:
 			let err = new Error(`Unknown option: ${commands[1]}
-usage: education [--online][--schools]`)
+usage: education [--online][--inperson]`)
 			err.name = 'UnknownOption'
 			throw err
 		}

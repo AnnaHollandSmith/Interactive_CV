@@ -6,7 +6,7 @@ const commands = [
 	{name: 'projects --search <query>', info: 'Search projects by technical skill used'},
 	{name: 'skills', info: 'Displays my technical skills with a mastery level'},
 	{name: 'education', info: 'Displays all the education I have received'},
-	{name: 'education --schools', info: 'Displays the schools that I have attend'},
+	{name: 'education --inperson', info: 'Displays the schools that I have attend'},
 	{name: 'education --online', info: 'Displays just the online courses I have taken'},
 	{name: 'work', info: 'Displays my work experience'},
 ]

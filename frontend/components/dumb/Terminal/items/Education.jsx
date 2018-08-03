@@ -5,11 +5,11 @@ import TerminalItem from './Item'
 export const Education = ({data, path, onRequestImage}) => {
 
 	const {
-		schools,
+		inperson,
 		online
 	} = data.value
 
-	const schoolList = schools.map( (school, index) =>
+	const schoolList = inperson.map( (school, index) =>
 		<School school={school} key={index}/>
 	)
 
@@ -24,7 +24,7 @@ export const Education = ({data, path, onRequestImage}) => {
 		<TerminalItem command={data.command} path={path}>
 			<section className='result-area'>
 				{schoolList.length > 0 &&
-					<h4 className='title'>Schools:</h4>
+					<h4 className='title'>In-person Courses:</h4>
 				}
 				{schoolList}
 
@@ -50,12 +50,12 @@ const School = ({school}) => (
 		<article className='flex-row'>
 			<div className='cell sm sub-title'>Location:</div>
 			<div className='cell fill'>
-				{school.location.city}, {school.location.state}, {school.location.country}
+				{school.location.city}, {school.location.country}
 			</div>
 		</article>
 
 		<article className='flex-row'>
-			<div className='cell sm sub-title'>Degree:</div>
+			<div className='cell sm sub-title'>Degree/Course:</div>
 			<div className='cell fill'>{school.degree}</div>
 		</article>
 
@@ -119,3 +119,4 @@ const Online = ({online, onImageClick}) => (
 		</article>
 	</div>
 )
+
