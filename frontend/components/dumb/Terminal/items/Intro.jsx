@@ -9,6 +9,7 @@ export const Intro = ({data, path}) => {
 		welcomeMessage,
 		commands,
 		example,
+		ps
 	} = data.value
 
 	const cList = commands.map( (cObj, index) =>
@@ -50,6 +51,11 @@ export const Intro = ({data, path}) => {
 				<h4 className='title'>
 					This is all too much, just take me to your CV:
 				</h4>
+				
+				<div className='flex-row'>
+					<p>{ps}</p>
+				</div>
+
 
 			</section>
 		</TerminalItem>

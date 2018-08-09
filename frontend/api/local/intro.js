@@ -42,7 +42,7 @@ const intro = {
 		command: 'education --online'
 	},
 	ps: `
-	type "print" and press enter to be taken to a pdf of my cv.
+	type "print" in the space below and press enter to be taken to a pdf of my cv.
 	`
 }
 
