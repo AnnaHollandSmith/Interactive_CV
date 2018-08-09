@@ -1,7 +1,7 @@
 import React from 'react'
 import {
 	Input, Intro, Bio, Skills, Projects, Images,
-	Education, Work, Print, TerminalError, Tab, Awards
+	Education, Work, Print, TerminalError, Tab, Awards, Volunteering
 } from './items'
 
 export default class Panel extends React.PureComponent{
@@ -146,6 +146,9 @@ class Switch extends React.Component{
 
 		case 'work':
 			return <Work data={data} path={path}/>
+
+		case 'volunteering':
+			return <Volunteering data={data} path={path}/>
 
 		case 'projects':
 			return (

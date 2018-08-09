@@ -51,10 +51,6 @@ class Input extends React.PureComponent {
 				this.handleSelection(event)
 			})
 			.catch(() => {
-				let audio = document.getElementById('funk')
-				audio.pause()
-				audio.currentTime = 0
-				audio.play()
 				this.handleSelection(event)
 			})
 		}
