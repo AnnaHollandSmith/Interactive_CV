@@ -151,7 +151,7 @@ const INITIAL_BAR = fromJS([
 			{line: true},
 			{title: 'Bring All to Front', span: ''},
 			{line: true},
-			{title: 'anna — cv — -bash — Solarized Dark', span: '⌘2'}
+			{title: 'anna — cv — -zsh — Vaughn', span: '⌘2'}
 		]
 	},
 	{

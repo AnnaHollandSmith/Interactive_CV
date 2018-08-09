@@ -9,6 +9,7 @@ const commands = [
 	{name: 'education --inperson', info: 'Displays the schools that I have attend'},
 	{name: 'education --online', info: 'Displays just the online courses I have taken'},
 	{name: 'work', info: 'Displays my work experience'},
+	{name: 'awards', info: 'Displays some of the awards I have won for my work'}
 ]
 
 

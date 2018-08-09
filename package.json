@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Phaze1D/Interactive-Resume.git"
+    "url": "git+https://github.com/AnnaHollandSmith/My-Interactive-CV.git"
   },
-  "author": "David Villarreal",
+  "author": "Anna Holland-Smith",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Phaze1D/Interactive-Resume/issues"
+    "url": "https://github.com/AnnaHollandSmith/My-Interactive-CV/issues"
   },
-  "homepage": "https://github.com/Phaze1D/Interactive-Resume#readme",
+  "homepage": "https://github.com/AnnaHollandSmith/My-Interactive-CV#readme",
   "dependencies": {
     "autosize": "^3.0.21",
     "axios": "^0.16.2",

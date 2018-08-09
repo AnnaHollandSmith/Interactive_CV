@@ -10,7 +10,6 @@ export const Bio = ({data, path}) => {
 
 	const {
 		name,
-		emoji,
 		role,
 		email,
 		location,

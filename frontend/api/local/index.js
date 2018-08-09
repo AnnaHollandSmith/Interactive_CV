@@ -6,6 +6,7 @@ import projects from './projects'
 import skills from './skills'
 import work from './work'
 import commands from './commands'
+import awards from './awards'
 
 
 const localData = {
@@ -16,6 +17,7 @@ const localData = {
 	projects: projects,
 	skills: skills,
 	work: work,
+	awards: awards,
 	tab: commands,
 	images: function (commands) {
 		let ret = this
