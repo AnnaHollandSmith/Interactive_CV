@@ -27,7 +27,7 @@ export const Volunteering = ({data, path}) => {
 const Job = ({job, aList}) => (
 	<div className='row-block'>
 		<article className='flex-row'>
-			<div className='cell sm sub-title'>Employer:</div>
+			<div className='cell sm sub-title'>Organisation:</div>
 			<div className='cell fill'>{job.employer}</div>
 		</article>
 
@@ -36,21 +36,11 @@ const Job = ({job, aList}) => (
 			<div className='cell fill'>{job.role}</div>
 		</article>
 
-		<article className='flex-row'>
-			<div className='cell sm sub-title'>Location:</div>
-			<div className='cell fill'>
-				{job.location.city}, {job.location.state}, {job.location.country}
-			</div>
+        	<article className='flex-row'>
+			<div className='cell sm sub-title'>Description:</div>
+			<div className='cell job'>{job.description}</div>
 		</article>
 
-		<article className='flex-row'>
-			<div className='cell sm sub-title'>Achievements:</div>
-			<div className='cell fill'>
-				<ul className='cell-list'>
-					{aList}
-				</ul>
-			</div>
-		</article>
 
 		<article className='flex-row'>
 			<div className='cell sm sub-title'>Dates:</div>

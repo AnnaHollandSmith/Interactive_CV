@@ -1,33 +1,34 @@
 const volunteering = {
 	jobs: [
 		{
-			employer: 'The Hut Group',
-			role: 'Programme Manager | THG Technology and Innovation Accelerator',
-			location: {city: 'Manchester', country: 'UK'},
-			dates: {from: 'May 2018', to: 'Present'},
-			url: 'https://www.thg.com/',
+			employer: 'CodeFirst:Girls',
+			role: 'Volunteer Instructor',
+			dates: {from: 'August 2016', to: 'Present'},
+			url: 'https://www.codefirstgirls.org.uk/',
 			description: `
-			The Hut Group is....
+			CodeFirst: Girls is ... 
 			`,
-			achievements: [
-				'Developed a Technical Curriculum covering (but not limited to) Python, Java, Operating Systems, Databases and Web Development',
-				`Developed a 'Professional Skills' Curriculum covering topics such as 'Developing a Growth Mindset', 'Mindfulness' and 'Working Effectively in Teams'`,
-				`Developed an 'Industry Primer' Curriculum providing an overview of how technology serves all areas of The Hut Group's order pipeline`,
-				`Developed The Hut Group's first ever 'Women in Tech' network`
-			]
+			achievements: []
 		},{
-			employer: 'BBC',
-			role: 'Software Engineer| Content Distribution Services',
-			location: {city: 'Manchester', country: 'UK'},
-			dates: {from: 'August 2016', to: 'May 2018'},
-			url: 'https://www.thg.com/',
+			employer: 'CodeYourFuture',
+			role: 'Organiser and volunteer',
+			dates: {from: 'January 2017', to: 'Present'},
+			url: 'https://codeyourfuture.io/',
 			description: `
-			Put description here....
+			CodeYourFuture is...
 			`,
-			achievements: [
-				'Put achievements here',
-			]
-		},
+			achievements: []
+        },
+        {
+            employer: 'Code4000',
+            role: 'Volunteer',
+			dates: {from: 'January 2017', to: 'Present'},
+			url: 'https://www.code4000.org/en',
+			description: `
+			Code4000 is a...
+			`,
+			achievements: [] 
+        },
 	]
 }
 
