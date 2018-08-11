@@ -1,7 +1,7 @@
 /* global require */
 
 const projects = [
-	{	id: 1,
+	{	id: 0,
 		name: 'Touchbase',
 		giturl: 'https://github.com/AnnaHollandSmith/touchbase',
 		liveurl: 'https://youtu.be/DqdluFS_gZY',
@@ -10,17 +10,36 @@ const projects = [
 		languages: ['JavaScript'],
 		images: [require('resources/images/tb1.png'), require('resources/images/tb2.png'), require('resources/images/tb3.png')]
 	},
+	{	id: 1,
+		name: 'Interactive Resume',
+		giturl: 'https://github.com/AnnaHollandSmith/Interactive_CV',
+		liveurl: 'tbc',
+		description: 'My interactive resume',
+		topics: ['React', 'Redux', 'Firebase'],
+		languages: ['JavaScript', 'SASS'],
+		images: [require('resources/images/cv.png'), require('resources/images/cv2.png'), require('resources/images/cv3.png')]
+	},
 	{
 		id: 2,
+		name: 'Wome Who Keynote',
+		giturl: 'private',
+		liveurl: 'https://womenwhokeynote.com/',
+		description: 'A platform for women to promote themselves for speaking opportunities',
+		topics: ['React', 'Meteor', 'JavaScript'],
+		languages: ['JavaScript'],
+		images: [require('resources/images/wwk.png'), require('resources/images/wwk2.png'), require('resources/images/wwk3.png')]
+	},
+	{
+		id: 3,
 		name: 'AirBeds',
 		giturl: 'https://github.com/AnnaHollandSmith/airbeds',
-		liveurl: '',
+		liveurl: 'none',
 		description: 'A simple AirBnb clone',
 		topics: ['React', 'Elasticsearch', 'JavaScript'],
 		languages: ['JavaScript'],
 		images: [require('resources/images/airbed.png')]
 	},
-	{	id: 3,
+	{	id: 4,
 		name: 'Pear',
 		giturl: 'https://github.com/AnnaHollandSmith/pear',
 		liveurl: 'http://findapear.herokuapp.com/users/sign_in',
@@ -30,7 +49,7 @@ const projects = [
 		images: [require('resources/images/pear2.png'), require('resources/images/pear3.png'), require('resources/images/pear4.png')]
 	}, 
 	{
-		id: 4,
+		id: 5,
 		name: 'MakersBnB',
 		giturl: 'hhttps://github.com/AnnaHollandSmith/MakersBnB',
 		liveurl: 'https://taark-bnb.herokuapp.com/',
@@ -40,7 +59,6 @@ const projects = [
 		images: [require('resources/images/makers.png')]
 	}
 ]
-
 export default function (commands) {
 	return projects
 }

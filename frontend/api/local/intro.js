@@ -38,7 +38,7 @@ const intro = {
 	`,
 	commands: commands(),
 	example: {
-		instruction: 'To display some of the courses I have studied type',
+		instruction: 'To display some of the courses I have studied type:',
 		command: 'education'
 	},
 	ps: `
