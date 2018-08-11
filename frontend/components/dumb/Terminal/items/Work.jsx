@@ -6,9 +6,8 @@ export const Work = ({data, path}) => {
 	const jobs = data.value.jobs
 
 	const jobList = jobs.map( (job, index) => {
-		const aList = job.achievements.map( (a, i) => <li key={i}>{a}</li>)
 		return (
-			<Job job={job} aList={aList} key={index}/>
+			<Job job={job} key={index}/>
 		)
 
 	})
@@ -39,17 +38,13 @@ const Job = ({job, aList}) => (
 		<article className='flex-row'>
 			<div className='cell sm sub-title'>Location:</div>
 			<div className='cell fill'>
-				{job.location.city}, {job.location.state}, {job.location.country}
+				{job.location.city}, {job.location.country}
 			</div>
 		</article>
 
 		<article className='flex-row'>
-			<div className='cell sm sub-title'>Achievements:</div>
-			<div className='cell fill'>
-				<ul className='cell-list'>
-					{aList}
-				</ul>
-			</div>
+			<div className='cell sm sub-title'>Location:</div>
+			<div className='cell fill'>{job.description}</div>
 		</article>
 
 		<article className='flex-row'>

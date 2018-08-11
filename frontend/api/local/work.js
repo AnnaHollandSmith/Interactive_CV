@@ -22,11 +22,13 @@ const work = {
 			dates: {from: 'August 2016', to: 'May 2018'},
 			url: 'https://www.thg.com/',
 			description: `
-			Put description here....
-			`,
-			achievements: [
-				'Put achievements here',
-			]
+			
+I worked as a Software Engineer within the Connections Team of the Content Distribution Services within BBC Design & Engineering.\n
+
+Content Distribution Services is the department within Design & Engineering that builds and operates published content APIs that power the BBC Online. Our mission is to craft a simple & coherent BBC APIs that allows internal and external developers to build innovative and high scale solutions using BBC content.\n
+
+The Connections team are responsible for APIs that maintain BBC concepts and the connections between these. We are also responsible for APIs that store collections of related or editorially selected content. These APIs are used across the BBC including the website and/or mobile applications for News, Sports, Bitesize and Radio.
+			`, 
 		},
 	]
 }

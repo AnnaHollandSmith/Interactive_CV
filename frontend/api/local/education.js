@@ -41,10 +41,28 @@ const education = {
 
 	online: [
 		{
-			name: 'Full Stack Web Developer Nanodegree',
-			school: 'Udacity',
+			name: 'Front-end Web Development',
+			school: 'Treehouse',
 			dates: {from: 'March 2018', to: 'Present'},
-			url: 'https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004',
+			url: 'https://teamtreehouse.com/home',
+		},
+		{
+			name: 'React',
+			school: 'Treehouse',
+			dates: {from: 'March 2018', to: 'Present'},
+			url: 'https://teamtreehouse.com/home',
+		},
+		{
+			name: 'React',
+			school: 'Design Primer',
+			dates: {from: 'March 2018', to: 'Present'},
+			url: 'https://teamtreehouse.com/home',
+		},
+		{
+			name: 'Introduction to UX',
+			school: 'University of Michigan (via edX)',
+			dates: {from: 'March 2018', to: 'Present'},
+			url: 'https://www.edx.org/micromasters/michiganx-user-experience-ux-research-and-design',
 		},
 		{
 			name: 'Introduction to Machine Learning',
@@ -57,23 +75,5 @@ const education = {
 
 
 export default function (commands) {
-
-	if(commands.length == 2){
-		switch (commands[1]) {
-		case '--online':
-			return {online: education.online, inperson: []}
-
-		case '--inperson':
-			return {inperson: education.inperson, online: []}
-
-		default:
-			let err = new Error(`Unknown option: ${commands[1]}
-usage: education [--online][--inperson]`)
-			err.name = 'UnknownOption'
-			throw err
-		}
-	}
-
-
 	return education
 }
