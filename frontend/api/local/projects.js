@@ -31,42 +31,6 @@ const projects = [
 	}
 ]
 
-function search(query){
-	let results = []
-	for (let i = 0; i < projects.length; i++) {
-
-		let langs = projects[i].languages
-		let topics = projects[i].topics
-
-		for (let j = 0; j < topics.length; j++) {
-			if(topics[j].toLowerCase() === query){
-				results.push(projects[i])
-				break
-			}
-		}
-
-		for (let j = 0; j < langs.length; j++) {
-			if(langs[j].toLowerCase() === query){
-				results.push(projects[i])
-				break
-			}
-		}
-	}
-	return results
-}
-
-
 export default function (commands) {
-	if(commands.length > 1 && commands[1] !== '--search'){
-		let err = new Error(`Unknown option: ${commands[1]}
-usage: projects [--search]`)
-		err.name = 'UnknownOption'
-		throw err
-	}
-
-	if(commands.length === 3 && commands[1] === '--search'){
-		return search(commands[2].toLowerCase())
-	}
-
 	return projects
 }
