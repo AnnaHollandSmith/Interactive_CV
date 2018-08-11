@@ -15,7 +15,7 @@ const awards = {
 
 	finalist: [
 		{
-			name: 'UK Social Mobility Awards',
+			awarding: 'UK Social Mobility Awards',
             award: 'Rising Star',
             description: 'put description here',
 			url: 'https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004',

@@ -94,4 +94,3 @@ const Finalist = ({finalist}) => (
 		</article>
 	</div>
 )
-
