@@ -3,11 +3,8 @@ const commands = [
 	{name: 'print', info: 'Print out a PDF version of my resume'},
 	{name: 'bio', info: 'Displays my bio information e.g contact info'},
 	{name: 'projects', info: 'Displays my favorite projects that I have created'},
-	{name: 'projects --search <query>', info: 'Search projects by technical skill used'},
 	{name: 'skills', info: 'Displays my technical skills with a mastery level'},
 	{name: 'education', info: 'Displays all the education I have received'},
-	{name: 'education --inperson', info: 'Displays the schools that I have attend'},
-	{name: 'education --online', info: 'Displays just the online courses I have taken'},
 	{name: 'work', info: 'Displays my work experience'},
 	{name: 'volunteering', info: 'Displays some of my volunteering work'},
 	{name: 'awards', info: 'Displays some of the awards I have won for my work'}

@@ -39,7 +39,7 @@ const intro = {
 	commands: commands(),
 	example: {
 		instruction: 'To display some of the courses I have studied type',
-		command: 'education --online'
+		command: 'education'
 	},
 	ps: `
 	type "print" in the space below and press enter to be taken to a pdf of my cv.
