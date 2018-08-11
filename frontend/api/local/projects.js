@@ -10,7 +10,17 @@ const projects = [
 		languages: ['JavaScript'],
 		images: [require('resources/images/tb1.png'), require('resources/images/tb2.png'), require('resources/images/tb3.png')]
 	},
-	{	id: 2,
+	{
+		id: 2,
+		name: 'AirBeds',
+		giturl: 'https://github.com/AnnaHollandSmith/airbeds',
+		liveurl: '',
+		description: 'A simple AirBnb clone',
+		topics: ['React', 'Elasticsearch', 'JavaScript'],
+		languages: ['JavaScript'],
+		images: [require('resources/images/airbed.png')]
+	},
+	{	id: 3,
 		name: 'Pear',
 		giturl: 'https://github.com/AnnaHollandSmith/pear',
 		liveurl: 'http://findapear.herokuapp.com/users/sign_in',
@@ -20,7 +30,7 @@ const projects = [
 		images: [require('resources/images/pear2.png'), require('resources/images/pear3.png'), require('resources/images/pear4.png')]
 	}, 
 	{
-		id: 3,
+		id: 4,
 		name: 'MakersBnB',
 		giturl: 'hhttps://github.com/AnnaHollandSmith/MakersBnB',
 		liveurl: 'https://taark-bnb.herokuapp.com/',
